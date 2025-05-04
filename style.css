@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Orbitron:wght@800&display=swap');
+
+
+
+/* Set the width and height of the body to cover the entire viewport */
+body {
+  width: 100%;
+  height: 100%;
+  /* Remove default margin to ensure content starts from the edge of the viewport */
+  margin: 0px;
+  /* Set the background color to 'aliceblue' */
+  background-color: aliceblue;
+  /* Apply a box shadow to create an inset effect with a color of #4dd2ff */
+  box-shadow: inset 0 0 100px #4dd2ff;
+  /* Set the cursor style to 'auto' (default cursor) */
+  cursor: auto;
+}
+
+.option-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+.option {
+  width: 150px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.option-span {
+  font-size: 20px;
+  font-family: Orbitron, sans-serif;
+}
+
+.option-title {
+  width: 100px;
+  font-size: 20px;
+  font-family: Orbitron, sans-serif;
+}
+
+/*Pretty toggle*/
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: rgba(90, 225, 255, 0.025);
+  display: block;
+  border: 2px solid #0a0a0a;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 13px;
+  height: 13px;
+  background: #7d7d7d;
+  border: 2px solid rgb(44, 44, 55);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked+label {
+  background: #7d7d7d;
+}
+
+input:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+#container {
+  /* Center the container horizontally with auto margin on left and right */
+  margin: 0px auto;
+  /* Set the height to 60% of the viewport height */
+  height: 60vh;
+  /* Set the width to 50% of the viewport width */
+  width: 50vw;
+  /* Set the background color using a custom variable */
+  background-color: aliceblue;
+  /* Set a background image with the file "1.jpg" */
+  background-image: url("1.jpg");
+  /* Apply a large border radius for rounded corners */
+  border-radius: 125px;
+  /* Apply a thick border with the color #fff */
+  border: 5vw solid #fff;
+  /* Set the position to relative */
+  position: relative;
+  /* Set a minimum height and width */
+  min-height: 70px;
+  min-width: 830px;
+  /* Apply a box shadow for a subtle shadow effect */
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, .3);
+  /* Add padding to the container */
+  padding: 20px;
+  /* Use flexbox to arrange content in a column and align it to the bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Set a z-index of -1 to place the container behind other elements */
+  z-index: -1;
+}
+
+
+#container::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 4.3vw solid #f8f8f8;
+  border-radius: 115px;
+  position: absolute;
+  top: -4.3vw;
+  left: -4.3vw;
+  box-shadow: 0 0 1px #aaa;
+  z-index: -1;
+}
+
+/* Styles for h1 elements */
+h1 {
+  /* Set the font size to 32 pixels */
+  font-size: 32px;
+  /* Center-align the text */
+  text-align: center;
+  /* Remove padding below the h1 element */
+  padding-bottom: 0px;
+  /* Remove margin below the h1 element */
+  margin-bottom: 0px;
+}
+
+/* Styles for div elements */
+div {
+  /* Center-align text within the div */
+  text-align: center;
+  /* Set the font size to 90 pixels */
+  font-size: 90px;
+  /* Set the text color to white */
+  color: white;
+  /* Add margin around the div */
+  margin: 20px;
+  /* Apply a text shadow for a subtle effect */
+  text-shadow: 3px 3px 20px #DBE9FA;
+  /* Use the 'Orbitron' font family with fallback to 'sans-serif' */
+  font-family: Orbitron, sans-serif;
+}
+
+/* Styles for span elements */
+span {
+  /* Set the font size to 80 pixels */
+  font-size: 80px;
+  /* Use the 'Orbitron' font family with fallback to 'sans-serif' */
+  font-family: Orbitron, sans-serif;
+}
+
+/* Styles for elements with the ID 'ampm' */
+#ampm {
+  /* Set the font size to 40 pixels */
+  font-size: 40px;
+}
