@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Digital Clock</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Tagesschrift&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
 </head>
 
 <body>
-  <div class="option-wrapper">
-    <div class="option">
-      <span class="option-span">12h</span>
-      <input type="checkbox" class="toggle-12-24" id="toggle-12-24">
-      <label for="toggle-12-24"></label>
-      <span class="option-span">24h</span>
+    <div class="option-wrapper">
+        <div class="option">
+            <span class="option-span">12</span>
+            <input type="checkbox" id="toggle-12-24" class="toggle-12-24">
+            <label for="toggle-12-24"></label>
+            <span class="option-span">24h</span>
+        </div>
+
+        <div class="option-title">
+            <span class="option-span">Digital Clocks</span>
+        </div>
+
+
     </div>
-    <div class="option">
-      <span class="option-span"> Digital Clocks</span>
-    </div>
-  </div>
-  <section id="container">
-    <div>
-      <span id="hours">00</span>:
-      <span id="minutes">00</span>:
-      <span id="seconds">00</span>
-      <span id="ampm"></span>
-    </div>
-    <div>
-      <h1 id="date-text"></h1>
-    </div>
-  </section>
-  <script src="script.js"></script>
+    <section id="container">
+        <div>
+            <span id="hours">00</span>
+            <span id="minutes">00</span>
+            <span id="seconds">00</span>
+            <span id="ampm"></span>
+        </div>
+        <div>
+            <h1 id="date-text">date-text</h1>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
